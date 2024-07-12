@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnayBekleyenDetay">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="386dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="111dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/surnnameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/usernameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/genderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geri Dön" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onayla"
+                android:text="Onayla" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

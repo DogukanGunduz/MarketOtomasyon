@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusteriProfil">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="386dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="111dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/musteriAdiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="İsim"
+                 />
+
+            <EditText
+                android:id="@+id/musteriSoyadiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Soyisim" />
+
+            <EditText
+                android:id="@+id/kullaniciAdiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Kullanıcı Adı" />
+
+            <EditText
+                android:id="@+id/sifreText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Şifre" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geri Dön" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onayla"
+                android:text="Güncelle" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

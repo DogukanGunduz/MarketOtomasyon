@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunlerListesiMusteriDetay">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="416dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="224dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/surnnameTextt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/usernameTextt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+
+            <Spinner
+                android:id="@+id/sayi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonnn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goBack"
+                android:text="Geri Dön" />
+
+            <Button
+                android:id="@+id/buttonnnn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buy"
+                android:text="Satın Al" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="36dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

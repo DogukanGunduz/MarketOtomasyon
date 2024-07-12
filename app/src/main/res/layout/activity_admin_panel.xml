@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="login"
+    tools:context=".AdminPanelGiris">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="281dp"
+            android:layout_height="242dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="177dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/adminKullaniciAdiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Kullanıcı Adı"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/adminSifreText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Şifre"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="login"
+                android:text="Giriş Yap" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
